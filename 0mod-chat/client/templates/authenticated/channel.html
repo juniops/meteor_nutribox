@@ -1,23 +1,25 @@
 <template name="channel">
-  {{> sidebar}}
 
-  <div class="conversation">
-    <div id="messages">
-      <div class="messages-list {{#if isLoading}}loading-list{{/if}}">
-        {{#each messages}}
-          {{> message}}
-        {{else}}
-          {{#if isDirect}}
-            <p class="alert alert-warning">Você não disse nada para {{username}} ainda. Diga olá!</p>
-          {{else}}
-            <p class="alert alert-warning">Este canal é bastante silencioso. Você deve dizer algo!</p>
-          {{/if}}
-        {{/each}}
-      </div>
+    {{> sidebar}}
+
+    <div class="conversation">
+        <div id="messages">
+            <div class="messages-list {{#if isLoading}}loading-list{{/if}}">
+                {{#each messages}}
+                    {{> message}}
+                {{else}}
+                    {{#if isDirect}}
+                        <p class="alert alert-warning">Você não disse nada para {{username}} ainda. Diga olá!</p>
+                    {{else}}
+                        <p class="alert alert-warning">Este canal é bastante silencioso. Você deve dizer algo!</p>
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="message-input">
+            <input name="message" placeholder="Digite sua mensagem aqui...">
+        </div>
     </div>
 
-    <div class="message-input">
-      <input name="message" placeholder="Digite sua mensagem aqui...">
-    </div>
-  </div>
 </template>

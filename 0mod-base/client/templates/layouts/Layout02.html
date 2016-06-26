@@ -1,0 +1,23 @@
+<template name="Layout02">
+    <div id="extr-page">
+        {{>bertAlert}}
+        {{>header02}}
+        <div id="main" role="main">
+            <div id="content" class="container">
+                {{#if loggingIn}}
+                    {{> loading}}
+                {{else}}
+                    {{#if authenticated}}
+                        {{#unless redirectAuthenticated}}
+                            {{> Template.dynamic template=yield}}
+                        {{/unless}}
+                    {{else}}
+                        {{#unless redirectPublic}}
+                            {{> Template.dynamic template=yield}}
+                        {{/unless}}
+                    {{/if}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

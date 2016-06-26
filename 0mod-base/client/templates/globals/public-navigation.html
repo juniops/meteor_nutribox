@@ -1,6 +1,10 @@
 <template name="publicNavigation">
-  <ul class="nav navbar-nav navbar-right">
-    <li class="{{currentRoute 'login'}}"><a href="{{pathFor 'login'}}">Entrar</a></li>
-    <li class="{{currentRoute 'signup'}}"><a href="{{pathFor 'signup'}}">Cadastrar</a></li>
-  </ul>
+    <!--<ul class="nav navbar-nav navbar-right">-->
+        <!--<li class="{{currentRoute 'login'}}"><a href="{{pathFor 'login'}}">Entrar</a></li>-->
+        <!--<li class="{{currentRoute 'signup'}}"><a href="{{pathFor 'signup'}}">Cadastrar</a></li>-->
+    <!--</ul>-->
+    <span id="extr-page-header-space">
+            <span class="hidden-mobile hiddex-xs">precisa criar uma conta?</span>
+            <a href="{{pathFor 'signup'}}" class="btn btn-danger">criar uma conta</a>
+        </span>
 </template>

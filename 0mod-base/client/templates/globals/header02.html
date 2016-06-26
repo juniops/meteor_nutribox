@@ -1,0 +1,16 @@
+<template name="header02">
+    <header id="header">
+
+        <div id="logo-group">
+            <span id="logo"> <img src="/img/logo.png" alt="SmartAdmin"> </span>
+        </div>
+
+        {{#if currentUser}}
+            {{> authenticatedNavigation}}
+        {{else}}
+            {{> publicNavigation}}
+        {{/if}}
+
+    </header>
+
+</template>

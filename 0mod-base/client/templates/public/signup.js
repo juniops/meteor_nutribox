@@ -8,8 +8,7 @@ Template.signup.onRendered( () => {
 Template.signup.events({
   'submit form': ( event ) => event.preventDefault(),
   'keyup [name="username"]' ( event ) {
-    let value     = event.target.value,
-        formatted = sanitizeUsername( value );
+    let value     = event.target.value,formatted = sanitizeUsername( value );
     event.target.value = formatted;
   }
 });

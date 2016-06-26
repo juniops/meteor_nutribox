@@ -1,6 +1,6 @@
 FlowRouter.notFound = {
     action() {
-        BlazeLayout.render( 'default', { yield: 'notFound' } );
+        BlazeLayout.render( 'mainLayout', { yield: 'notFound' } );
     }
 };
 
@@ -17,28 +17,28 @@ publicRoutes.route( '/', {
 publicRoutes.route( '/signup', {
     name: 'signup',
     action() {
-        BlazeLayout.render( 'default', { yield: 'signup' } );
+        BlazeLayout.render( 'mainLayout', { yield: 'signup' } );
     }
 });
 
 publicRoutes.route( '/login', {
     name: 'login',
     action() {
-        BlazeLayout.render( 'default', { yield: 'login' } );
+        BlazeLayout.render( 'Layout02', { yield: 'login' } );
     }
 });
 
 publicRoutes.route( '/recover-password', {
     name: 'recover-password',
     action() {
-        BlazeLayout.render( 'default', { yield: 'recoverPassword' } );
+        BlazeLayout.render( 'mainLayout', { yield: 'recoverPassword' } );
     }
 });
 
 publicRoutes.route( '/reset-password/:token', {
     name: 'reset-password',
     action() {
-        BlazeLayout.render( 'default', { yield: 'resetPassword' } );
+        BlazeLayout.render( 'mainLayout', { yield: 'resetPassword' } );
     }
 });
 
