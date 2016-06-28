@@ -3,9 +3,10 @@
         <li id="dropdown-user" class="dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
 								<span class="pull-right">
-									<img class="img-circle img-user media-object" src="/img/av1.png" alt="Profile Picture">
+									<img class="img-circle img-user media-object" src="/img/av1.png"
+                                         alt="Profile Picture">
 								</span>
-                <div class="username hidden-xs">John Doe {{currentUser.username}}</div>
+                <div class="username hidden-xs">{{currentUser.username}}</div>
             </a>
 
             <div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
@@ -40,8 +41,8 @@
                 </ul>
 
                 <div class="pad-all text-right">
-                    <a href="#" class="btn btn-primary">
-                        <i class="fa fa-sign-out fa-fw logout"></i> Sair
+                    <a href="#" class="btn btn-primary logout">
+                        <i class="fa fa-sign-out fa-fw"></i> Sair
                     </a>
                 </div>
             </div>

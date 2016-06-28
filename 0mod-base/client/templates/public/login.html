@@ -1,67 +1,53 @@
 <template name="login">
-    <div id="content" class="container">
 
-        <div class="row">
+    <div class="cls-content">
 
+        <div class="cls-content-sm panel">
+            <div class="panel-body">
 
-            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-offset-4 col-lg-4">
+                <p class="pad-btm">Acesse sua conta</p>
 
-                <div class="cls-content-sm panel">
-                    <div class="panel-body">
-
-                        <form id="login" class="login">
-                            <div class="mar-ver pad-btm">
-                                <h3 class="h4 mar-no">Nutrirbox</h3>
-                                <p class="text-muted">Acessar Sistema</p>
-                            </div>
-
-                            <fieldset>
-
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                        <input type="text" name="emailAddress" class="form-control" placeholder="seu e-mail">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
-                                        <input type="password" name="password" class="form-control" placeholder="digite sua senha">
-                                    </div>
-                                </div>
-
-
-                                <div class="checkbox pad-btm text-left">
-                                    <input type="checkbox" class="magic-checkbox" id="demo-form-checkbox">
-                                    <label for="demo-form-checkbox">lembreme</label>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
-                            </fieldset>
-                        </form>
-
+                <form id="login" class="login">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                            <input type="text" name="emailAddress" class="form-control" placeholder="seu e-mail">
+                        </div>
                     </div>
-
-                    <div class="pad-all">
-                        <a class="btn-link mar-rgt" href="#">Forgot password ?</a>
-                        <a class="btn-link mar-lft" href="#">Create a new account</a>
-
-                        <div class="media pad-top bord-top">
-                            <div class="pull-right">
-                                <a class="pad-rgt" href="#"><i class="demo-psi-facebook icon-lg text-primary"></i></a>
-                                <a class="pad-rgt" href="#"><i class="demo-psi-twitter icon-lg text-info"></i></a>
-                                <a class="pad-rgt" href="#"><i class="demo-psi-google-plus icon-lg text-danger"></i></a>
-                            </div>
-                            <div class="media-body text-left">
-                                Login with
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
+                            <input type="password" name="password" class="form-control" placeholder="digite sua senha">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 text-left checkbox">
+                            <label class="form-checkbox form-icon form-text">
+                                <input type="checkbox"> lembre-me
+                            </label>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-group text-right">
+                                <button type="submit" class="btn btn-success text-uppercase">Entrar</button>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                    <div class="mar-btm"><em>- ou -</em></div>
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="fa fa-facebook fa-fw"></i> Login com Facebook
+                    </button>
+                </form>
 
             </div>
         </div>
+
+        <div class="pad-ver">
+            <a class="btn-link mar-rgt" href="#">Esqueceu a senha ?</a>
+            <a class="btn-link mar-lft" href="#">Criar nova conta</a>
+        </div>
+
     </div>
 
 </template>

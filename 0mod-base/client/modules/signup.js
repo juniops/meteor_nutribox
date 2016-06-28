@@ -17,7 +17,7 @@ let _handleSignup = () => {
     if ( error ) {
       Bert.alert( error.reason, 'danger' );
     } else {
-      Bert.alert( 'Welcome!', 'success' );
+      Bert.alert( 'Bem Vindo!', 'success' );
     }
   });
 };

@@ -2,7 +2,7 @@
 Template.mainnav.rendered = function () {
 
     import  "/0mod-base/imports/theme";
-    
+
     var menu = $('#mainnav-menu');
     if (menu.length) {
         $('#mainnav-menu').metisMenu({

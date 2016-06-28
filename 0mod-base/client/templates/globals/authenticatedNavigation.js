@@ -1,4 +1,4 @@
-Template.header.events({
+Template.authenticatedNavigation.events({
   'click .logout' ( event ) {
     event.preventDefault();
 
@@ -6,7 +6,7 @@ Template.header.events({
       if ( error ) {
         Bert.alert( error.reason, 'warning' );
       } else {
-        Bert.alert( 'Até mais!', 'success' );
+        Bert.alert( 'até mais ...', 'success' );
       }
     });
   }
