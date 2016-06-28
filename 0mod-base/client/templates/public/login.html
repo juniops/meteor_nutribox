@@ -2,92 +2,63 @@
     <div id="content" class="container">
 
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
-                <h1 class="txt-color-red login-header-big">SmartAdmin</h1>
-                <div class="hero">
 
-                    <div class="pull-left login-desc-box-l">
-                        <h4 class="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin,
-                            everywhere you go!</h4>
-                        <div class="login-app-icons">
-                            <a href="javascript:void(0);" class="btn btn-danger btn-sm">Frontend Template</a>
-                            <a href="javascript:void(0);" class="btn btn-danger btn-sm">Find out more</a>
+
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-offset-4 col-lg-4">
+
+                <div class="cls-content-sm panel">
+                    <div class="panel-body">
+
+                        <form id="login" class="login">
+                            <div class="mar-ver pad-btm">
+                                <h3 class="h4 mar-no">Nutrirbox</h3>
+                                <p class="text-muted">Acessar Sistema</p>
+                            </div>
+
+                            <fieldset>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                        <input type="text" name="emailAddress" class="form-control" placeholder="seu e-mail">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-asterisk"></i></div>
+                                        <input type="password" name="password" class="form-control" placeholder="digite sua senha">
+                                    </div>
+                                </div>
+
+
+                                <div class="checkbox pad-btm text-left">
+                                    <input type="checkbox" class="magic-checkbox" id="demo-form-checkbox">
+                                    <label for="demo-form-checkbox">lembreme</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                    <div class="pad-all">
+                        <a class="btn-link mar-rgt" href="#">Forgot password ?</a>
+                        <a class="btn-link mar-lft" href="#">Create a new account</a>
+
+                        <div class="media pad-top bord-top">
+                            <div class="pull-right">
+                                <a class="pad-rgt" href="#"><i class="demo-psi-facebook icon-lg text-primary"></i></a>
+                                <a class="pad-rgt" href="#"><i class="demo-psi-twitter icon-lg text-info"></i></a>
+                                <a class="pad-rgt" href="#"><i class="demo-psi-google-plus icon-lg text-danger"></i></a>
+                            </div>
+                            <div class="media-body text-left">
+                                Login with
+                            </div>
                         </div>
                     </div>
 
-                    <img src="img/demo/iphoneview.png" class="pull-right display-image" alt="" style="width:210px">
-
                 </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h5 class="about-heading">About SmartAdmin - Are you up to date?</h5>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa.
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h5 class="about-heading">Not just your average template!</h5>
-                        <p>
-                            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                            nobis est eligendi voluptatem accusantium!
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
-
-                <div class="well no-padding">
-                    <form id="login" class="smart-form client-form login">
-                        <header>Acessar Sistema - Nutrirbox</header>
-
-                        <fieldset>
-
-                            <section>
-                                <label class="label" for="emailAddress">E-mail</label>
-                                <label class="input"> <i class="icon-append fa fa-user"></i>
-                                    <input type="email" name="emailAddress" placeholder="seu e-mail">
-                                    <b class="tooltip tooltip-top-right"> <i class="fa fa-user txt-color-teal"></i>digite seu endereço de email</b>
-                                </label>
-                            </section>
-
-                            <section>
-                                <label class="label">Senha</label>
-                                <label class="input"> <i class="icon-append fa fa-lock"></i>
-                                    <input type="password" name="password" class="form-control" placeholder="digite sua senha">
-                                    <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> sua senha</b> </label>
-                                <div class="note">
-                                    <a href="{{pathFor 'recover-password'}}">Esqueceu a senha?</a>
-                                </div>
-                            </section>
-
-                            <section>
-                                <label class="checkbox"><input type="checkbox" name="remember" checked=""><i></i>permanecer conectado</label>
-                            </section>
-                        </fieldset>
-                        <footer>
-                            <button type="submit" class="btn btn-primary">Entrar</button>
-                        </footer>
-                    </form>
-
-                </div>
-
-                <h5 class="text-center"> - Or sign in using -</h5>
-
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="javascript:void(0);" class="btn btn-primary btn-circle"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="btn btn-info btn-circle"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="btn btn-warning btn-circle"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
 
             </div>
         </div>

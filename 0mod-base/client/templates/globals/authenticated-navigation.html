@@ -1,10 +1,50 @@
 <template name="authenticatedNavigation">
-  <ul class="nav navbar-nav navbar-right">
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{currentUser.emails.[0].address}} <span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
-        <li class="logout"><a href="#">sair</a></li>
-      </ul>
-    </li>
-  </ul>
+    <ul class="nav navbar-top-links pull-right">
+        <li id="dropdown-user" class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+								<span class="pull-right">
+									<img class="img-circle img-user media-object" src="/img/av1.png" alt="Profile Picture">
+								</span>
+                <div class="username hidden-xs">John Doe {{currentUser.username}}</div>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
+
+                <div class="pad-all bord-btm">
+                    <p class="text-lg text-muted text-thin mar-btm">Informações Adicionais</p>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar" style="width: 70%;">
+                            <span class="sr-only">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="head-list">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user fa-fw fa-lg"></i> Perfil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge badge-danger pull-right">9</span>
+                            <i class="fa fa-envelope fa-fw fa-lg"></i> Mesagens
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label label-success pull-right">Novo</span>
+                            <i class="fa fa-gear fa-fw fa-lg"></i> Configurações
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="pad-all text-right">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa fa-sign-out fa-fw logout"></i> Sair
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
 </template>

@@ -9,7 +9,7 @@ const pathFor = ( path, view ) => {
   return FlowRouter.path( path, view.hash, query );
 };
 
-Template.registerHelper( 'pathFor', pathFor );
+// Template.registerHelper( 'pathFor', pathFor );
 
 Template.registerHelper( 'urlFor', ( path, view ) => {
   return Meteor.absoluteUrl( pathFor( path, view ).substr( 1 ) );

@@ -6,7 +6,7 @@ Template.header.events({
       if ( error ) {
         Bert.alert( error.reason, 'warning' );
       } else {
-        Bert.alert( 'Logged out!', 'success' );
+        Bert.alert( 'Até mais!', 'success' );
       }
     });
   }

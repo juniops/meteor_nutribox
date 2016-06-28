@@ -1,9 +1,10 @@
 <template name="Layout02">
-    <div id="extr-page">
+    <div id="container" class="cls-container">
         {{>bertAlert}}
         {{>header02}}
-        <div id="main" role="main">
-            <div id="content" class="container">
+
+        <div class="cls-content">
+
                 {{#if loggingIn}}
                     {{> loading}}
                 {{else}}
@@ -17,7 +18,6 @@
                         {{/unless}}
                     {{/if}}
                 {{/if}}
-            </div>
         </div>
     </div>
 </template>

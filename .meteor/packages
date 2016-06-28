@@ -12,7 +12,7 @@ jquery
 check
 audit-argument-checks
 themeteorchef:jquery-validation
-browser-policy
+#browser-policy                         # help you prevent and mitigate common attacks like cross-site scripting and clickjacking. https://atmospherejs.com/meteor/browser-policy
 
 
 themeteorchef:bert
@@ -47,4 +47,6 @@ aldeed:autoform
 
 themeteorchef:controller
 meteortoys:allthings
+
 yasaricli:nanoscroller
+fortawesome:fontawesome
