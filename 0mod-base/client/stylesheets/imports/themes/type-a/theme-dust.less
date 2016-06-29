@@ -1,16 +1,48 @@
-@import "../../variables.less";
-@import "../themes.less";
+@import "../../_variables.less";
+& when not (@main-compile){
+    @import "../_themes.less";
+}
 
+
+
+
+// BODY
 //============================================
+@body-bg                    : #ecf0f5;
+@body-color					: #758697;
+@boxed-bg                   : #afb7bf;
+@text-muted                 : lighten(@body-color, 20%);
 
 
 
 
+// GENERAL COMPONENTS
+//============================================
+@state-active-bg            : #ff784d;
+@state-active-color         : #fff;
 
-@body-bg                    : #ebeef0;
-@body-color					: #5f5f5f;
+@selection-bg			    : @state-active-bg;
+@selection-color			: @state-active-color;
 
 
+
+
+// CLEAN ZONE (LOGIN, REGISTER, AND ERROR PAGES CONTAINER)
+//============================================
+@cls-bg                     : @body-bg;
+@cls-color                  : darken(@body-color, 7%);
+
+
+
+
+// NAVIGATION
+//============================================
+@mainnav-bg                 : #27333e;
+@mainnav-color              : lighten(@mainnav-bg, 55%);
+@mainnav-hover-color        : #fff;
+@mainnav-active-bg          : transparent;
+@mainnav-active-color       : #fff;
+@mainnav-active-state       : @state-active-bg;
 
 
 
@@ -27,33 +59,9 @@
 
 
 
-
-
-
-
-// NAVIGATION
-//============================================
-@mainnav-bg                 : #31404e;
-@mainnav-color              : lighten(@mainnav-bg, 50%);
-@mainnav-hover-color        : #fff;
-@mainnav-active-bg          : transparent;
-@mainnav-active-color       : #fff;
-@mainnav-active-state       : @state-active-bg;
-
-
-
-
-
-
-
-
-
-
-
-
 // ASIDE
 //============================================
-@aside-dark-bg              : lighten(@mainnav-bg,5%);
+@aside-dark-bg              : lighten(@mainnav-bg, 6%);
 @aside-dark-color           : #fff;
 @aside-bright-bg            : #fff;
 @aside-bright-color         : #515151;
@@ -61,27 +69,16 @@
 
 
 
-
-
+// TIMELINE
+//============================================
+@timeline-bg                : @body-bg;
+@timeline-color             : @body-color;
+@timeline-border-color		: lighten(@body-color, 25%);
 
 
 
 
 // FOOTER
 //============================================
-@footer-bg                  : multiply(@body-bg, #ddd);
+@footer-bg                  : lighten(@body-bg, 2%);
 @footer-color               : @body-color;
-
-
-
-
-
-
-
-
-// COMPONENT
-//============================================
-@state-active-bg            : #f77b5b;
-@state-active-color         : #fff;
-
-

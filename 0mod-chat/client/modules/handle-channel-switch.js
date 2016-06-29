@@ -1,8 +1,5 @@
-import setScroll from './set-scroll';
-
 let _establishSubscription = ( template, isDirect, channel ) => {
   template.subscribe( 'channel', isDirect, channel, () => {
-    setScroll( 'messages' );
     setTimeout( () => { template.loading.set( false ); }, 300 );
   });
 };

@@ -1,0 +1,33 @@
+<template name="sidebar">
+
+    <div class="panel">
+        <div class="panel-body">
+            <div class="panel-heading"><h3 class="panel-title">Canais</h3></div>
+            <div class="list-group">
+                <ul>
+                    {{#each channel in channels}}
+                        <a class="list-group-item  list-item-xl {{currentChannel channel.name}}" href="/messages/{{channel.name}}">
+                            #{{channel.name}}
+                        </a>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-body">
+            <div class="panel-heading"><h3 class="panel-title">Mensagens diretas</h3></div>
+            <div class="list-group">
+                <ul>
+                    {{#each user in users}}
+                        <a class="list-group-item  list-item-xl {{currentChannel user.username}}" href="/messages/@{{user.username}}">
+                            {{fullName user.profile.name}}
+                            <span class="badge badge-primary">20</span>
+                        </a>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

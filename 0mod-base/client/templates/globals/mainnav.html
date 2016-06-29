@@ -3,19 +3,64 @@
     <nav id="mainnav-container">
         <div id="mainnav">
 
-            <div id="mainnav-shortcut">
-                <!--<ul class="list-unstyled">-->
-                <!--<li data-content="Shortcut 1" class="col-xs-4" data-original-title="" title="">-->
-                <!--<a href="#" class="shortcut-grid">-->
-                <!--<i class="fa fa-car"></i>-->
-                <!--</a>-->
-                <!--</li>-->
-                <!--</ul>-->
-            </div>
-
             <div id="mainnav-menu-wrap">
                 <div class="nano">
                     <div class="nano-content">
+
+                        <div id="mainnav-profile" class="mainnav-profile">
+                            <div class="profile-wrap">
+                                <div class="pad-btm">
+                                    <img class="img-circle img-sm img-border" src="/img/profile-photos/1.png" alt="Profile Picture">
+                                </div>
+                                <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
+                                            <span class="pull-right dropdown-toggle">
+                                                <i class="dropdown-caret"></i>
+                                            </span>
+                                    <p class="mnp-name">{{currentUser.profile.name.first}} {{currentUser.profile.name.last}}</p>
+                                    <span class="mnp-desc">{{currentUser.emails.[0].address}}</span>
+                                </a>
+                            </div>
+                            <div id="profile-nav" class="collapse list-group bg-trans">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-user"></i> Visualizar Perfil
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-cogs"></i> Configurações
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-life-ring"></i> Ajuda
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-sign-out"></i> Sair
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="mainnav-shortcut">
+                            <ul class="list-unstyled">
+                                <li class="col-xs-3" data-content="My Profile">
+                                    <a class="shortcut-grid" href="#">
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3" data-content="Messages">
+                                    <a class="shortcut-grid" href="#">
+                                        <i class="fa fa-cogs"></i>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3" data-content="Activity">
+                                    <a class="shortcut-grid" href="#">
+                                        <i class="fa fa-cutlery"></i>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3" data-content="Lock Screen">
+                                    <a class="shortcut-grid" href="#">
+                                        <i class="fa fa-sign-out"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                         <ul id="mainnav-menu" class="list-group">
                             <li class="list-th"></li>
                             <li class="active-link">

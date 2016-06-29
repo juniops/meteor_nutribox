@@ -1,11 +1,20 @@
-@import "imports/variables.less";
-@import "imports/themes/type-c/theme-dark.less";
-@import "imports/nifty/layout.less";
-@import "imports/nifty/navbar.less";
-@import "imports/nifty/mainnav.less";
-@import "imports/nifty/aside.less";
-@import "imports/nifty/footer.less";
-@import "imports/nifty/helper-classes.less";
-@import "imports/nifty/animation.less";
-@import "imports/nifty/extras.less";
-@import "imports/nifty/bs-overwrite.less";
+
+
+@import "imports/_variables.less";
+
+
+// Set as default color scheme.
+@import "imports/themes/type-a/theme-mint.less";
+
+
+
+@main-compile       : true;
+@import "imports/nifty/_layout.less";
+@import "imports/nifty/_navbar.less";
+@import "imports/nifty/_mainnav.less";
+@import "imports/nifty/_aside.less";
+@import "imports/nifty/_footer.less";
+@import "imports/nifty/_animations.less";
+@import "imports/nifty/_extras.less";
+@import "imports/nifty/_bs-overwrite.less";
+@import "imports/nifty/_helper-classes.less";
