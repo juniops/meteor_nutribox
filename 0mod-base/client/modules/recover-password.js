@@ -5,9 +5,9 @@ let _handleRecovery = () => {
 
   Accounts.forgotPassword( { email: email }, ( error ) => {
     if ( error ) {
-      Bert.alert( error.reason, 'warning' );
+      swal(error.reason, "", "error")
     } else {
-      Bert.alert( 'Check your inbox for a reset link!', 'success' );
+      swal("Veja seu e-mail e clique no link para resetar sua senha!", "", "success")
     }
   });
 };

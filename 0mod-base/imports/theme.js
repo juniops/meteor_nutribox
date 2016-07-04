@@ -25,7 +25,6 @@
 
 !function ($) {
     "use strict";
-
     window.nifty = {
         'container'         : $('#container'),
         'contentContainer'  : $('#content-container'),
@@ -53,40 +52,6 @@
             return support
         }()
     };
-
-    nifty.document.ready(function(){
-        nifty.document.trigger('nifty.ready');
-    })
-
-    nifty.document.on('nifty.ready', function(){
-        //Activate the Bootstrap tooltips
-        var tooltip = $('.add-tooltip');
-        if (tooltip.length)tooltip.tooltip();
-
-        var popover = $('.add-popover');
-        if (popover.length)popover.popover();
-
-
-        // STYLEABLE SCROLLBARS
-        // =================================================================
-        // Require nanoScroller
-        // http://jamesflorentino.github.io/nanoScrollerJS/
-        // =================================================================
-        var nano = $('.nano');
-        if(nano.length) nano.nanoScroller({
-            preventPageScrolling: true
-        });
-
-        // Update nancoscroller
-        $('#navbar-container .navbar-top-links').on('shown.bs.dropdown', '.dropdown', function () {
-            $(this).find('.nano').nanoScroller({preventPageScrolling: true});
-        });
-
-
-        nifty.body.addClass('nifty-ready');
-    });
-
-
 }(jQuery);
 
 
@@ -146,38 +111,6 @@
                 }
             }
         });
-    });
-
-}(jQuery);
-
-
-
-
-
-/* ========================================================================
- * PANEL REMOVAL v1.1
- * -------------------------------------------------------------------------
- * Optional Font Icon : By Font Awesome
- * http://fortawesome.github.io/Font-Awesome/
- * ========================================================================*/
-!function ($) {
-    "use strict";
-
-    nifty.document.on('nifty.ready', function() {
-        var closebtn = $('[data-dismiss="panel"]');
-
-        if (closebtn.length) {
-            closebtn.one('click', function(e){
-                e.preventDefault();
-                var el = $(this).parents('.panel');
-
-                el.addClass('remove').on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(e){
-                    if (e.originalEvent.propertyName == "opacity") {
-                        el.remove();
-                    }
-                });
-            });
-        }
     });
 
 }(jQuery);
@@ -648,31 +581,6 @@
 
 
 
-// NAVIGATION SHORTCUT BUTTONS
-// =================================================================
-// Require Bootstrap Popover
-// http://getbootstrap.com/javascript/#popovers
-// =================================================================
-!function ($) {
-    nifty.document.on('nifty.ready', function() {
-        var shortcutBtn = $('#mainnav-shortcut');
-
-        if (shortcutBtn.length) {
-            shortcutBtn.find('li').each(function () {
-                var $el = $(this);
-                $el.popover({
-                    animation:false,
-                    trigger: 'hover focus',
-                    placement: 'bottom',
-                    container: '#mainnav-container',
-                    template: '<div class="popover mainnav-shortcut"><div class="arrow"></div><div class="popover-content"></div>'
-                });
-            });
-        }
-    });
-}(jQuery);
-
-
 
 
 /* ========================================================================
@@ -1085,52 +993,6 @@
     };
 
     nifty.window.on('resizeEnd',updateNav).trigger('resize');
-
-
-    nifty.document.on('nifty.ready', function() {
-        var toggleBtn = $('.mainnav-toggle');
-        if(toggleBtn.length){
-            toggleBtn.on('click', function(e){
-                    e.preventDefault();
-
-                    if(toggleBtn.hasClass('push')){
-                        $.niftyNav('pushToggle');
-                    }else if(toggleBtn.hasClass('slide')){
-                        $.niftyNav('slideToggle');
-                    }else if(toggleBtn.hasClass('reveal')){
-                        $.niftyNav('revealToggle');
-                    }else{
-                        $.niftyNav('colExpToggle');
-                    }
-                }
-            )}
-
-        var menu = $('#mainnav-menu');
-        if (menu.length) {
-            // COLLAPSIBLE MENU LIST
-            // =================================================================
-            // Require MetisMenu
-            // http://demo.onokumus.com/metisMenu/
-            // =================================================================
-            $('#mainnav-menu').metisMenu({
-                toggle: true
-            });
-
-            // STYLEABLE SCROLLBARS
-            // =================================================================
-            // Require nanoScroller
-            // http://jamesflorentino.github.io/nanoScrollerJS/
-            // =================================================================
-            scrollbar = nifty.mainNav.find('.nano');
-            if(scrollbar.length){
-                scrollbar.nanoScroller({
-                    preventPageScrolling : true
-                });
-            }
-
-        }
-
-    });
 }(jQuery);
 
 

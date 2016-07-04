@@ -3,7 +3,7 @@ import setScroll from './set-scroll';
 let _handleInsert = ( message, event, template ) => {
   Meteor.call( 'insertMessage', message, ( error ) => {
     if ( error ) {
-      Bert.alert( error.reason, 'danger' );
+      swal(error.reason, "", "error")
     } else {
       event.target.value = '';
     }

@@ -6,7 +6,7 @@ const handleRedirect = ( routes, redirect ) => {
   }
 };
 
-Template.Layout02.helpers({
+Template.NoLayout.helpers({
   loggingIn() {
     return Meteor.loggingIn();
   },

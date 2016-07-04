@@ -16,6 +16,7 @@ autoupdate@1.2.10
 babel-compiler@6.8.3
 babel-runtime@0.1.9_1
 base64@1.0.9
+bigdsk:inputmask@3.1.63
 binary-heap@1.0.9
 blaze@2.1.8
 blaze-tools@1.0.9
@@ -38,7 +39,7 @@ ejson@1.0.12
 email@1.0.14_1
 facebook@1.2.8
 fortawesome:fontawesome@4.5.0
-fourseven:scss@3.4.3
+fourseven:scss@3.3.3_3
 geojson-utils@1.0.9
 google@1.1.13
 hot-code-push@1.0.4
@@ -49,6 +50,7 @@ id-map@1.0.8
 jquery@1.11.9
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
+kevohagan:sweetalert@1.0.0
 less@2.6.3_1
 livedata@1.0.18
 localstorage@1.0.11

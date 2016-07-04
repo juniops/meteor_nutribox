@@ -25,7 +25,6 @@ meteorhacks:fast-render
 meteor-base
 session
 templating
-#fourseven:scss
 less
 reactive-var
 reactive-dict
@@ -50,3 +49,6 @@ meteortoys:allthings
 
 yasaricli:nanoscroller
 fortawesome:fontawesome
+
+bigdsk:inputmask							# A simple packaging of jquery.inputmask for Meteor.
+kevohagan:sweetalert						# A BEAUTIFUL REPLACEMENT FOR JAVASCRIPT'S "ALERT"

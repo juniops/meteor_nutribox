@@ -4,9 +4,9 @@ Template.authenticatedNavigation.events({
 
     Meteor.logout( ( error ) => {
       if ( error ) {
-        Bert.alert( error.reason, 'warning' );
+        swal(error.reason, "", "error")
       } else {
-        Bert.alert( 'até mais ...', 'success' );
+        swal('até mais ...', "", "success")
       }
     });
   }
