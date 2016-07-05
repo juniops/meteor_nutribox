@@ -9,7 +9,7 @@ const publicRoutes = FlowRouter.group( { name: 'public' } );
 
 publicRoutes.route( '/', {
     action() {
-        FlowRouter.go( '/login' );
+        FlowRouter.go( '/landingpage' );
     }
 });
 
