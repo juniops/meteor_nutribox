@@ -1,25 +1,74 @@
 <template name="channel">
 
-    {{> sidebar}}
-
-    <div class="conversation">
-        <div id="messages">
-            <div class="messages-list {{#if isLoading}}loading-list{{/if}}">
-                {{#each messages}}
-                    {{> message}}
-                {{else}}
-                    {{#if isDirect}}
-                        <p class="alert alert-warning">Você não disse nada para {{username}} ainda. Diga olá!</p>
-                    {{else}}
-                        <p class="alert alert-warning">Este canal é bastante silencioso. Você deve dizer algo!</p>
-                    {{/if}}
-                {{/each}}
-            </div>
+    <div class="row">
+        <div class="col-lg-6">
+            {{> sidebar}}
         </div>
 
-        <div class="message-input">
-            <input name="message" placeholder="Digite sua mensagem aqui...">
+        <div class="col-lg-6">
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="panel-control">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default" data-toggle="dropdown"><i class="demo-pli-gear icon-lg"></i></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Disponível</a></li>
+                                    <li><a href="#">Ocupado</a></li>
+                                    <li><a href="#">Ausente</a></li>
+                                    <li class="divider"></li>
+                                    <li><a id="demo-connect-chat" href="#" class="disabled-link" data-target="#demo-chat-body">Connect</a></li>
+                                    <li><a id="demo-disconnect-chat" href="#" data-target="#demo-chat-body">Disconect</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="panel-title">Chat</h3>
+                    </div>
+
+                    <div>
+                        <div class="nano" style="height:400px">
+
+                            <div class="nano-content pad-all">
+
+                                <ul class="list-unstyled media-block {{#if isLoading}}loading-list{{/if}}">
+                                    {{#each messages}}
+                                        {{> message}}
+                                    {{else}}
+                                        {{#if isDirect}}
+                                            <p class="alert alert-warning">Você não disse nada para {{username}} ainda. Diga olá!</p>
+                                        {{else}}
+                                            <p class="alert alert-warning">Este canal é bastante silencioso. Você deve dizer algo!</p>
+                                        {{/if}}
+                                    {{/each}}
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control chat-input" name="message" placeholder="Digite sua mensagem aqui...">
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-primary btn-block enviar" type="button">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
+
+
+    <!--<div class="conversation">-->
+        <!--<div id="messages">-->
+
+        <!--</div>-->
+
+        <!--<div class="message-input">-->
+
+        <!--</div>-->
+    <!--</div>-->
 
 </template>

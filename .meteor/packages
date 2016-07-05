@@ -52,3 +52,4 @@ fortawesome:fontawesome
 
 bigdsk:inputmask							# A simple packaging of jquery.inputmask for Meteor.
 kevohagan:sweetalert						# A BEAUTIFUL REPLACEMENT FOR JAVASCRIPT'S "ALERT"
+tinytest

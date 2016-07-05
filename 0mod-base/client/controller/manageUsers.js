@@ -41,21 +41,21 @@ Controller('manageUsersForm', {
                 });
             } else {
                 console.log(userData);
-                Accounts.createUser(userData, function (error) {
-                    if (error) {
-                        var msg = "Entre em contato com administrador do sistema!";
-                        if (error.reason == 'Email already exists.') {
-                            msg = 'E-mail já cadastrado no sistema.'
-                        }
-                        if (error.reason == 'Email already exists.') {
-                            msg = 'Usuário já existe no sistema.'
-                        }
-                        swal(msg, "", "error")
-                    } else {
-                        Router.go("dashboard1");
-                        swal("Usuário criado com sucesso", "", "success")
-                    }
-                });
+                // Accounts.createUser(userData, function (error) {
+                //     if (error) {
+                //         var msg = "Entre em contato com administrador do sistema!";
+                //         if (error.reason == 'Email already exists.') {
+                //             msg = 'E-mail já cadastrado no sistema.'
+                //         }
+                //         if (error.reason == 'Email already exists.') {
+                //             msg = 'Usuário já existe no sistema.'
+                //         }
+                //         swal(msg, "", "error")
+                //     } else {
+                //         Router.go("dashboard1");
+                //         swal("Usuário criado com sucesso", "", "success")
+                //     }
+                // });
             }
         }
     }

@@ -39,7 +39,7 @@ ejson@1.0.12
 email@1.0.14_1
 facebook@1.2.8
 fortawesome:fontawesome@4.5.0
-fourseven:scss@3.3.3_3
+fourseven:scss@3.8.0_1
 geojson-utils@1.0.9
 google@1.1.13
 hot-code-push@1.0.4
@@ -83,12 +83,12 @@ minifier-js@1.1.12_1
 minimongo@1.0.17
 modules@0.6.4
 modules-runtime@0.6.4_1
-momentjs:moment@2.13.1
+momentjs:moment@2.14.1
 mongo@1.1.9_1
 mongo-id@1.0.5
 msavin:jetsetter@2.0.0
 msavin:mongol@2.0.1
-npm-bcrypt@0.8.6_1
+npm-bcrypt@0.8.7
 npm-mongo@1.4.44_1
 oauth@1.1.11
 oauth2@1.1.10
@@ -119,6 +119,7 @@ themeteorchef:commonmark@1.1.0
 themeteorchef:controller@1.2.0
 themeteorchef:jquery-validation@1.14.0
 themeteorchef:seeder@0.2.0
+tinytest@1.0.11
 tracker@1.0.14
 twbs:bootstrap@3.3.6
 ui@1.0.11
