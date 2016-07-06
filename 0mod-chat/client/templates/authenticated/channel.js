@@ -20,7 +20,6 @@ Template.channel.helpers({
     messages() {
         let messages = Messages.find({}, {sort: {timestamp: 1}});
         if (messages) {
-            console.log(sortMessages(messages));
             return sortMessages(messages);
         }
     }

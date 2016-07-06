@@ -58,6 +58,7 @@ meteor@1.1.15_1
 meteor-base@1.0.4
 meteorhacks:fast-render@2.14.0
 meteorhacks:inject-data@2.0.0
+meteorhacks:kadira@2.29.1
 meteorhacks:meteorx@1.4.1
 meteorhacks:picker@1.0.3
 meteorhacks:ssr@2.2.0
@@ -81,12 +82,13 @@ minifier-js@1.1.12_1
 minimongo@1.0.17
 modules@0.6.4
 modules-runtime@0.6.4_1
-momentjs:moment@2.13.1
+momentjs:moment@2.14.1
 mongo@1.1.9_1
 mongo-id@1.0.5
+mongo-livedata@1.0.12
 msavin:jetsetter@2.0.0
 msavin:mongol@2.0.1
-npm-bcrypt@0.8.6_1
+npm-bcrypt@0.8.7
 npm-mongo@1.4.44_1
 oauth@1.1.11
 oauth2@1.1.10

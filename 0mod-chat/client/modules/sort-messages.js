@@ -1,6 +1,4 @@
 let _decideIfShowHeader = (previousMessage, message) => {
-    console.log(message.owner)
-    console.log(Meteor.userId())
     message.showHeader =  message.owner === Meteor.userId()
 };
 
