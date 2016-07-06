@@ -4,7 +4,6 @@ settings-production.json
 npm-debug.log
 .idea
 node_modules
-/settings.json
-/.deploy
+settings.json
 .deploy
 0mod-base/client/imports/

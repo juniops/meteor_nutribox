@@ -6,9 +6,9 @@ let _handleReset = () => {
 
   Accounts.resetPassword( token, password, ( error ) => {
     if ( error ) {
-      Bert.alert( error.reason, 'danger' );
+      swal(error.reason, "", "error")
     } else {
-      Bert.alert( 'Password reset!', 'success' );
+      swal('Password reset!', "", "success")
     }
   });
 };

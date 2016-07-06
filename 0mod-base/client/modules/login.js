@@ -6,9 +6,9 @@ let _handleLogin = () => {
 
   Meteor.loginWithPassword( email, password, ( error ) => {
     if ( error ) {
-      Bert.alert( error.reason, 'warning' );
+      swal(error.reason, "", "error")
     } else {
-      Bert.alert( 'Logged in!', 'success' );
+      swal("Faça seu pedido agora!", "", "success")
     }
   });
 };

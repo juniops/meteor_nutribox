@@ -1,0 +1,32 @@
+<template name="NoLayout">
+    <div id="container" class="cls-container">
+        {{>bertAlert}}
+
+        <div class="bg-img demo-my-bg" id="bg-overlay"></div>
+
+        <div class="cls-header cls-header-lg">
+            <div class="cls-brand">
+                <a href="index.html" class="box-inline">
+                    <img alt="Nutrirbox" src="/img/logo.png" class="brand-icon">
+                    <span class="brand-title">Nutrirbox <span class="text-thin">Sistema de pedidos</span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="cls-content">
+            {{#if loggingIn}}
+                {{> loading}}
+            {{else}}
+                {{#if authenticated}}
+                    {{#unless redirectAuthenticated}}
+                        {{> Template.dynamic template=yield}}
+                    {{/unless}}
+                {{else}}
+                    {{#unless redirectPublic}}
+                        {{> Template.dynamic template=yield}}
+                    {{/unless}}
+                {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</template>

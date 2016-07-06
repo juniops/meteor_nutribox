@@ -15,9 +15,9 @@ let _handleSignup = () => {
 
   Accounts.createUser( user, ( error ) => {
     if ( error ) {
-      Bert.alert( error.reason, 'danger' );
+      swal(error.reason, "", "error")
     } else {
-      Bert.alert( 'Bem Vindo!', 'success' );
+      swal('Bem Vindo!', "", "success")
     }
   });
 };
