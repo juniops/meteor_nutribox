@@ -46,12 +46,15 @@ standard-minifier-js
 aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
+fourseven:scss
 
 themeteorchef:controller
 meteortoys:allthings
 
 yasaricli:nanoscroller
 fortawesome:fontawesome
+meteorhacks:kadira
+
 
 bigdsk:inputmask							# A simple packaging of jquery.inputmask for Meteor.
 kevohagan:sweetalert						# A BEAUTIFUL REPLACEMENT FOR JAVASCRIPT'S "ALERT"
